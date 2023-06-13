@@ -1,0 +1,14 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1493219686142-5a8641badc78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    
+    }
+label {
+    display: block;
+}
+
+main {
+    background-color: rgba(147, 193, 118, 0.9);
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 1, 0) ;
+}
