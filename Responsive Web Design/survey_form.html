@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="survey_form.css">
 </head>
 <body>
+    <header></header>
+    <h1 id="title">Health Survey Form</h1>
+    <p id="descption">Tell us about your health</p>
+    </header>    
     <main>
-        <h1 id="title">Health Survey Form</h1>
-        <p id="descption">Tell us about your health</p>
         <form action="" id="survey-form">
             <fieldset>
                 <label for="name" id="name-label"> Name
@@ -35,23 +37,50 @@
             </fieldset>    
             <fieldset>
                 <p>About your current diet:</p>
-                <label for="1">
-                    <input type="radio" name="1" id="1">
+                <label for="radAnswer">
+                    <input type="radio" name="radAnswer" id="rad1">
                     I prefer healthy food
                 </label>
                 <label for="2">
-                    <input type="radio" name="2" id="2">
+                    <input type="radio" name="radAnswer" id="rad2">
                     I prefer not so healthy food
                 </label>
                 <label for="3">
-                    <input type="radio" name="3" id="3">
+                    <input type="radio" name="radAnswer" id="rad3">
                     I try to balance between healthy and not so healthy food
                 </label>
                 <label for="4">
-                    <input type="radio" name="4" id="4">
+                    <input type="radio" name="radAnswer" id="rad4">
                     I do not worry in make distinction
+                </label>               
+            </fieldset>
+            <fieldset>
+                <p>There's something do you like to improve related to your health?</p>
+                <label for="check1">
+                    <input type="checkbox" name="check1" id="check1">
+                    Do health checkup's
+                </label>
+                <label for="check2">
+                    <input type="checkbox" name="check2" id="check2">
+                    Have a better diet
+                </label>
+                <label for="check3">
+                    <input type="checkbox" name="check3" id="check3">
+                    Do more exercises
+                </label>
+                <label for="check4">
+                    <input type="checkbox" name="check4" id="check4">
+                    Start the gym
                 </label>
             </fieldset>
+            <fieldset>
+                <label for="talk">Any comments or sugestions?
+                    <textarea name="talk" id="talk" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" />
+
+
 
         </form>
 
