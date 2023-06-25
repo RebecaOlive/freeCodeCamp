@@ -36,8 +36,8 @@ body {
     width: 100%;
     font-family: inherit;
     color: inherit;
-    /**TODO resolver problema de backgroudr */
-    background: ;
+
+    background: rgba(127, 177, 108, 0.952) ;
 }
 
 fieldset {
