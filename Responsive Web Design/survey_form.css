@@ -28,7 +28,7 @@ body {
 .input-textarea {
     width: 100%;
     resize: vertical;
-    font-family: inherit;
+    font-style: inherit;
 }
 
 .input-submit {
