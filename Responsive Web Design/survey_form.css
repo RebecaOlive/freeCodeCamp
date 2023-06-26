@@ -13,7 +13,6 @@ body {
         display: block;
     }
 
-
 .form {
     background-color: rgba(147, 193, 118, 0.9);
     color: rgb(0, 1, 0) ;
@@ -24,11 +23,13 @@ body {
     margin-right: auto;
     max-width: 500px;
 }
-
-.input-textarea {
+.input-text {
+    margin: 10px 0 10px 0;
     width: 100%;
     resize: vertical;
-    font-style: inherit;
+    font-family: inherit;
+    min-height: 24px;
+    border: 1px;
 }
 
 .input-submit {
@@ -36,11 +37,11 @@ body {
     width: 100%;
     font-family: inherit;
     color: inherit;
-
+    border: 1px;
     background: rgba(127, 177, 108, 0.952) ;
+    min-height: 24px;
 }
 
 fieldset {
-    border: 0px;
-
+    border: 0rem;
 }
