@@ -1,6 +1,6 @@
 :root {
-    --cor-verde:rgba(147, 193, 118, 0.5)
-    --cor-branca: 
+    --cor-verde: rgba(147, 193, 118, 0.5);
+    --cor-branca: rgba(255, 255, 255, 0.9); 
 }
 
 body {
@@ -50,18 +50,18 @@ label {
     font-family: inherit;
     color: inherit;
     border: 1px;
-    background: rgba(255, 255, 255, 0.9) ;
+    background: var(--cor-verde);
     min-height: 36px;
     font-size: 20px;
     padding: 0px;
     border-radius: 5px;
-    color: var(--cor-verde);
+    color: var(--cor-branca);
     transition: 0.2s;
 }
 
 input[type="submit"]:hover {
-    background: var(--cor-verde);
-    color: white;
+    background: var(--cor-branca);
+    color: var(--cor-verde);
     transition: 0.25s;
 }
 
