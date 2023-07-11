@@ -8,25 +8,23 @@
     <link rel="stylesheet" href="survey_form.css">
 </head>
 <body>
-    <header>
-        <h1 id="title">Health Survey Form</h1>
-        <p id="descption">Tell us about your health</p>
-    </header>
     <main>
         <div class="form">
+            <h1 id="title">Health Survey Form</h1>
+            <p class="description" id="description">Tell us about your health</p>
             <form action="" id="survey-form">
                 <fieldset>
                     <label for="name" id="name-label">
-                         Name
-                        <input type="text" name="name" id="name" placeholder="Enter your complete name" required class="input-text">
+                        Name
+                        <input type="text" name="name" id="name" placeholder="Enter your complete name" required autocomplete="off" class="input-text">
                     </label>
                     <label for="email" id="email-label">
                         Email
-                        <input type="email" id="email" placeholder="Enter your Email" required class="input-text" >
+                        <input type="email" id="email" placeholder="Enter your Email" required class="input-text" autocomplete="off">
                     </label>
                     <label for="number" id="number-label">
                         Age (optional) 
-                        <input type="number" id="number" min="13" max="120" class="input-text">
+                        <input type="number" id="number" min="13" max="120" placeholder="Enter your Age" value="number" autocomplete="off" class="input-text">
                     </label>
                     <label for="select" id="dropdown-label">Which option best describes your current role?
                         <select name="" id="dropdown" class="input-text">
@@ -42,42 +40,42 @@
                 <fieldset>
                     <p>About your current diet:</p>
                     <label for="rad1">
-                        <input type="radio" name="rad1" id="rad1">
+                        <input type="radio" name="radAnswer" value="rad1" id="rad1">
                         I prefer healthy food
                     </label>
                     <label for="rad2">
-                        <input type="radio" name="rad2" id="rad2">
+                        <input type="radio" name="radAnswer" value="rad2" id="rad2">
                         I prefer not so healthy food
                     </label>
                     <label for="rad3">
-                        <input type="radio" name="rad3" id="rad3">
+                        <input type="radio" name="radAnswer" value="rad3" id="rad3">
                         I try to balance between healthy and not so healthy food
                     </label>
                     <label for="rad4">
-                        <input type="radio" name="rad4" id="rad4">
+                        <input type="radio" name="radAnswer" value="rad4" id="rad4">
                         I do not worry in make distinction
                     </label>
                 </fieldset>
                 <fieldset>
                         <p>There's something do you like to improve for your health?</p>
                     <label for="check1">
-                        <input type="checkbox" name="check1" id="check1">
+                        <input type="checkbox" name="check1" id="check1" value="check1">
                         Do health checkups
                     </label>
                     <label for="check2">
-                        <input type="checkbox" name="check2" id="check2">
+                        <input type="checkbox" name="check2" id="check2" value="check2">
                         Have a better diet
                     </label>
                     <label for="check3">
-                        <input type="checkbox" name="check3" id="check3">
+                        <input type="checkbox" name="check3" id="check3" value="check3">
                         Do more exercises
                     </label>
                     <label for="check4">
-                        <input type="checkbox" name="check4" id="check4">
+                        <input type="checkbox" name="check4" id="check4" value="check4">
                         Start the gym
                     </label>
                     <label for="check5">
-                        <input type="checkbox" name="check5" id="check5">
+                        <input type="checkbox" name="check5" id="check5" value="check5">
                         Consult with a Nutritionist
                      </label>
                 </fieldset>
@@ -86,7 +84,9 @@
                     <textarea name="comments" class="input-text" id="comment" placeholder="Enter your comment here" ></textarea>
                 </fieldset>
                 <fieldset>
-                    <input type="submit" class="input-submit">
+                    <label for="survey-form">
+                        <input type="submit" class="input-submit" value="submit" id="submit">
+                    </label>
                 </fieldset>
             </form>
         </div>
