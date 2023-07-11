@@ -3,6 +3,10 @@
     --cor-branca: rgba(255, 255, 255, 0.9); 
 }
 
+h1, .description {
+    text-align: center;
+}
+
 body {
     background-image: url(https://images.unsplash.com/photo-1493219686142-5a8641badc78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
     background-size: cover;
@@ -11,9 +15,12 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: Poppins , sans-serif;
-    text-align: center
     }
-    
+
+    main {
+    padding: 20px 0px 20px 0px;
+    }
+
 label {
     display: block;
     align-items: center;
@@ -50,18 +57,18 @@ label {
     font-family: inherit;
     color: inherit;
     border: 1px;
-    background: var(--cor-verde);
+    background: var(--cor-branca);;
     min-height: 36px;
     font-size: 20px;
     padding: 0px;
     border-radius: 5px;
-    color: var(--cor-branca);
+    color: var(--cor-verde);
     transition: 0.2s;
 }
 
 input[type="submit"]:hover {
-    background: var(--cor-branca);
-    color: var(--cor-verde);
+    background: var(--cor-verde);
+    color: var(--cor-branca);
     transition: 0.25s;
 }
 
@@ -70,4 +77,3 @@ fieldset {
 }
 
 
-/** TODO: Create animation for placeholder and correct "textarea"
